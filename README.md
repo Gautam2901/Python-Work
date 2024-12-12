@@ -101,7 +101,7 @@ Kafka.
 #### Step 7: Create Consumer (Receive Messages from Kafka)
 1. Inside the kafka_project folder, create a new file called consumer.py.
 
-### Run the Concumer:
+### Run the Consumer:
 - Open Command Prompt or Terminal.
 - Navigate to the kafka_project folder where `consumer.py` is
 located.

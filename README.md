@@ -88,7 +88,7 @@ path_to_folder```.
 - Type `python database.py` and press `Enter` to create the database.
 
 #### Step 6: Create Producer (Send Messages to Kafka)
-1. Inside the kafka_project folder, create a new file called `producer.py`
+- Inside the kafka_project folder, create a new file called `producer.py`
 using a text editor.
 
 ### Run the Producer:
@@ -99,7 +99,7 @@ located.
 Kafka.
 
 #### Step 7: Create Consumer (Receive Messages from Kafka)
-1. Inside the kafka_project folder, create a new file called consumer.py.
+- Inside the kafka_project folder, create a new file called consumer.py.
 
 ### Run the Consumer:
 - Open Command Prompt or Terminal.
@@ -109,7 +109,7 @@ located.
 Kafka.
 
 #### Step 8: Add Messages to SQLite Database
-1. You can now add messages to the SQLite database manually or through Python
+- You can now add messages to the SQLite database manually or through Python
 code
 
 #### Step 10: Final Test

@@ -28,3 +28,36 @@ Since Kafka is built on Java, we need to ensure Java is installed properly. We w
 - Open Command Prompt and type:
   ```bash
   java -version
+
+Step 2: Install Apache Kafka
+1. Download Kafka:
+Visit the Apache Kafka download page.
+Choose the latest stable version of Kafka. As of now, the latest stable version is Kafka 3.5.0 (check for the most recent version).
+Download the Binary downloads for Kafka 3.5.0 (for Windows).
+2. Extract Kafka:
+Once the download is complete, extract the .tgz file using a tool like 7-Zip or WinRAR to a directory (e.g., C:\kafka).
+Step 3: Install Zookeeper (Required by Kafka)
+Kafka uses Zookeeper for managing and coordinating distributed services. It is bundled with Kafka, so you don't need to install it separately.
+
+Step 4: Start Zookeeper and Kafka Server
+1. Start Zookeeper:
+Open Command Prompt and navigate to the Kafka directory:
+bash
+Copy code
+cd C:\kafka
+Run the following command to start Zookeeper:
+bash
+Copy code
+zookeeper-server-start.bat config\zookeeper.properties
+You should see logs indicating that Zookeeper has started. Keep this window open.
+2. Start Kafka Server:
+Open another Command Prompt window.
+Navigate to the Kafka directory:
+bash
+Copy code
+cd C:\kafka
+Run the following command to start Kafka:
+bash
+Copy code
+kafka-server-start.bat config\server.properties
+You should see logs indicating Kafka is running. Keep this window open.

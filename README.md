@@ -56,4 +56,18 @@ Kafka uses Zookeeper for managing and coordinating distributed services. It is b
 - Open Command Prompt and navigate to the Kafka directory:
   ```bash
   zookeeper-server-start.bat config\zookeeper.properties
+- You should see that logs indicating that Zookeeper has started.
+#### Start Kafka Server
+- Open another command prompt window
+- Navigate to the Kafka directory:
+  ```bash
+  cd C:\kafka
+- Run the following command to start Kafka:
+  ```bash
+  kafka-server-start.bat config\server.properties
+- You should see logs indicating Kafka is running. Keep this window open.
+  
+
+  
+
 

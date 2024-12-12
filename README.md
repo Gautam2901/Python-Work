@@ -76,6 +76,56 @@ Kafka uses Zookeeper for managing and coordinating distributed services. It is b
 - Open Command Prompt and Terminal.
 - Type `python` and press `Enter`.
 - Type ```import sqlite``` and press `Enter`
+### 2. Create a new Python script to set up the SQLite database:
+- Create a folder called kafka_project.
+- Inside this folder, create a file called database.py using a text editor
+like Notepad or Visual Studio Code.
+
+### Run the Script:
+- Open Command Prompt or Terminal.
+- Navigate to the folder where `database.py` is located by typing ```cd
+path_to_folder```.
+- Type `python database.py` and press `Enter` to create the database.
+
+#### Step 6: Create Producer (Send Messages to Kafka)
+1. Inside the kafka_project folder, create a new file called `producer.py`
+using a text editor.
+
+### Run the Producer:
+- Open Command Prompt or Terminal.
+- Navigate to the kafka_project folder where `producer.py` is
+located.
+- Type `python producer.py` and press `Enter` to send the messages to
+Kafka.
+
+#### Step 7: Create Consumer (Receive Messages from Kafka)
+1. Inside the kafka_project folder, create a new file called consumer.py.
+
+### Run the Concumer:
+- Open Command Prompt or Terminal.
+- Navigate to the kafka_project folder where `consumer.py` is
+located.
+- Type `python consumer.py` and press `Enter` to send the messages to
+Kafka.
+
+#### Step 8: Add Messages to SQLite Database
+1. You can now add messages to the SQLite database manually or through Python
+code
+
+#### Step 10: Final Test
+1. Open two Command Prompt/Terminal windows.
+2. In the first window, run the consumer by typing `python consumer.py`.
+3. In the second window, run the producer by typing `python producer.py`.
+4. Add a message using `add_message.py` or manually insert a message into the
+database.
+5. Watch as the consumer receives the message in real-time.
+Conclusion
+Congratulations! You’ve built a simple Kafka-based messaging application that stores
+and sends messages using Kafka, Python, and SQLite.
+Free Resources:
+• Kafka: (Download Kafka)
+• SQLite: (SQLite Official Page)
+
   
 
   

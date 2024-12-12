@@ -66,6 +66,16 @@ Kafka uses Zookeeper for managing and coordinating distributed services. It is b
   ```bash
   kafka-server-start.bat config\server.properties
 - You should see logs indicating Kafka is running. Keep this window open.
+
+#### Step 4: Install Kafka Python Liabrary
+1. Open the Command Prompt or Terminal
+2. Type `pip install kafka-python` and press `Enter`. This install a python liabrary that allows you interact with Kafka.
+
+#### Step 5: Set up the SQLite Database
+- You don't need to install sqlite separately, because it comes with Python.
+- Open Command Prompt and Terminal.
+- Type `python` and press `Enter`.
+- Type ```import sqlite``` and press `Enter`
   
 
   

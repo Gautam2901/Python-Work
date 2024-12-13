@@ -29,35 +29,105 @@ Since Kafka is built on Java, we need to ensure Java is installed properly. We w
   ```bash
   java -version
 
-Step 2: Install Apache Kafka
-1. Download Kafka:
-Visit the Apache Kafka download page.
-Choose the latest stable version of Kafka. As of now, the latest stable version is Kafka 3.5.0 (check for the most recent version).
-Download the Binary downloads for Kafka 3.5.0 (for Windows).
-2. Extract Kafka:
-Once the download is complete, extract the .tgz file using a tool like 7-Zip or WinRAR to a directory (e.g., C:\kafka).
-Step 3: Install Zookeeper (Required by Kafka)
+### Step 2: Install Apache Kafka
+
+#### 1. Download Kafka:
+- Visit the [Apache Kafka download page](https://kafka.apache.org/downloads).
+- Choose the latest stable version of Kafka. As of now, the latest stable version is Kafka 3.5.0 (check for the most recent version).
+- Download the **Binary downloads for Kafka 3.5.0** (for Windows).
+
+#### 2. Extract Kafka:
+- Once the download is complete, extract the `.tgz` file using a tool like 7-Zip or WinRAR to a directory (e.g., `C:\kafka`).
+
+---
+
+### Step 3: Install Zookeeper (Required by Kafka)
 Kafka uses Zookeeper for managing and coordinating distributed services. It is bundled with Kafka, so you don't need to install it separately.
 
-Step 4: Start Zookeeper and Kafka Server
-1. Start Zookeeper:
-Open Command Prompt and navigate to the Kafka directory:
-bash
-Copy code
-cd C:\kafka
-Run the following command to start Zookeeper:
-bash
-Copy code
-zookeeper-server-start.bat config\zookeeper.properties
-You should see logs indicating that Zookeeper has started. Keep this window open.
-2. Start Kafka Server:
-Open another Command Prompt window.
-Navigate to the Kafka directory:
-bash
-Copy code
-cd C:\kafka
-Run the following command to start Kafka:
-bash
-Copy code
-kafka-server-start.bat config\server.properties
-You should see logs indicating Kafka is running. Keep this window open.
+---
+
+### Step 4: Start Zookeeper and Kafka Server
+
+#### 1. Start Zookeeper:
+- Open Command Prompt and navigate to the Kafka directory:
+  ```bash
+  cd C:\kafka
+#### Run the following command to start Zookeeper:
+- Open Command Prompt and navigate to the Kafka directory:
+  ```bash
+  zookeeper-server-start.bat config\zookeeper.properties
+- You should see that logs indicating that Zookeeper has started.
+#### Start Kafka Server
+- Open another command prompt window
+- Navigate to the Kafka directory:
+  ```bash
+  cd C:\kafka
+- Run the following command to start Kafka:
+  ```bash
+  kafka-server-start.bat config\server.properties
+- You should see logs indicating Kafka is running. Keep this window open.
+
+#### Step 4: Install Kafka Python Liabrary
+1. Open the Command Prompt or Terminal
+2. Type `pip install kafka-python` and press `Enter`. This install a python liabrary that allows you interact with Kafka.
+
+#### Step 5: Set up the SQLite Database
+- You don't need to install sqlite separately, because it comes with Python.
+- Open Command Prompt and Terminal.
+- Type `python` and press `Enter`.
+- Type ```import sqlite``` and press `Enter`
+### 2. Create a new Python script to set up the SQLite database:
+- Create a folder called kafka_project.
+- Inside this folder, create a file called database.py using a text editor
+like Notepad or Visual Studio Code.
+
+### Run the Script:
+- Open Command Prompt or Terminal.
+- Navigate to the folder where `database.py` is located by typing ```cd
+path_to_folder```.
+- Type `python database.py` and press `Enter` to create the database.
+
+#### Step 6: Create Producer (Send Messages to Kafka)
+- Inside the kafka_project folder, create a new file called `producer.py`
+using a text editor.
+
+### Run the Producer:
+- Open Command Prompt or Terminal.
+- Navigate to the kafka_project folder where `producer.py` is
+located.
+- Type `python producer.py` and press `Enter` to send the messages to
+Kafka.
+
+#### Step 7: Create Consumer (Receive Messages from Kafka)
+- Inside the kafka_project folder, create a new file called consumer.py.
+
+### Run the Consumer:
+- Open Command Prompt or Terminal.
+- Navigate to the kafka_project folder where `consumer.py` is
+located.
+- Type `python consumer.py` and press `Enter` to send the messages to
+Kafka.
+
+#### Step 8: Add Messages to SQLite Database
+- You can now add messages to the SQLite database manually or through Python
+code
+
+#### Step 10: Final Test
+1. Open two Command Prompt/Terminal windows.
+2. In the first window, run the consumer by typing `python consumer.py`.
+3. In the second window, run the producer by typing `python producer.py`.
+4. Add a message using `add_message.py` or manually insert a message into the
+database.
+5. Watch as the consumer receives the message in real-time.
+Conclusion
+Congratulations! You’ve built a simple Kafka-based messaging application that stores
+and sends messages using Kafka, Python, and SQLite.
+Free Resources:
+• Kafka: (Download Kafka)
+• SQLite: (SQLite Official Page)
+
+  
+
+  
+
+

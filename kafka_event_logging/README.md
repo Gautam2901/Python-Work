@@ -1,4 +1,4 @@
-# Python-Work
+# Event-Logging System with Kafka, Python and SQLite3.
 
 ## Setup the Java Environment to Work with Kafka
 

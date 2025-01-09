@@ -1,8 +1,8 @@
-#### Customer Feedback System
+### Customer Feedback System
 
 This project is a simple CRM application designed to record and manage customer feedback. The system includes basic CRM features such as adding customers, recording feedback, viewing feedback, and updating feedback status.
 
-#### Key Features
+### Key Features
 
 ### 1. Add Customer
 
